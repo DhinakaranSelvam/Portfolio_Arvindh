@@ -1,0 +1,121 @@
+.achievements-section {
+  padding: 100px 2rem;
+  background: white;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.achievement-card {
+  background: var(--bg-alt);
+  border: 2px solid var(--border);
+  border-radius: 20px;
+  padding: 2.5rem;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow);
+  opacity: 0;
+  transform: translateY(40px) rotate(-2deg);
+  animation: rotateIn 0.7s ease forwards;
+  position: relative;
+}
+
+.achievement-card::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: var(--gradient);
+  border-radius: 20px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.achievement-card:hover::after {
+  opacity: 0.1;
+}
+
+.achievement-card:hover {
+  transform: translateY(-12px) rotate(0deg);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--primary);
+}
+
+@keyframes rotateIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.achievement-icon-wrapper {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.75rem;
+  transition: all 0.4s ease;
+  border: 3px solid var(--border);
+}
+
+.achievement-card:hover .achievement-icon-wrapper {
+  transform: scale(1.15) rotate(10deg);
+  border-color: var(--primary);
+}
+
+.achievement-icon {
+  font-size: 3rem;
+}
+
+.achievement-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.achievement-description {
+  font-size: 1.05rem;
+  color: var(--text);
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .achievements-section {
+    padding: 70px 1.5rem;
+  }
+
+  .achievements-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .achievement-card {
+    padding: 2rem;
+  }
+
+  .achievement-icon-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+
+  .achievement-icon {
+    font-size: 2.5rem;
+  }
+
+  .achievement-title {
+    font-size: 1.25rem;
+  }
+}

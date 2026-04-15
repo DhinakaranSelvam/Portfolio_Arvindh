@@ -1,0 +1,140 @@
+.footer {
+  background: var(--bg-dark);
+  color: white;
+  padding: 4rem 2rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient);
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.footer-brand {
+  flex: 1;
+}
+
+.footer-logo {
+  font-size: 2rem;
+  font-weight: 900;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.footer-tagline {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.social-link {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.social-link:hover {
+  background: var(--gradient);
+  border-color: transparent;
+  color: white;
+  transform: translateY(-8px) scale(1.1);
+  box-shadow: 0 15px 35px rgba(14, 165, 233, 0.4);
+}
+
+.footer-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  margin: 2.5rem 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-copyright {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+
+.footer-location {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 3rem 1.5rem 2rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-logo {
+    font-size: 1.75rem;
+  }
+
+  .footer-tagline {
+    font-size: 1rem;
+  }
+
+  .social-link {
+    width: 50px;
+    height: 50px;
+  }
+}
