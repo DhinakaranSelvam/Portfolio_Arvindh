@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   padding: 120px 2rem 80px;
-  background: var(--bg-alt);
+  background: var(--bg-primary);
   position: relative;
   overflow: hidden;
 }
@@ -17,7 +17,7 @@
   right: -10%;
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(14, 165, 233, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.08) 0%, transparent 70%);
   border-radius: 50%;
   animation: float 8s ease-in-out infinite;
 }
@@ -29,7 +29,7 @@
   left: -10%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.06) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.06) 0%, transparent 70%);
   border-radius: 50%;
   animation: float 10s ease-in-out infinite reverse;
 }
@@ -59,11 +59,11 @@
   align-items: center;
   gap: 0.75rem;
   padding: 0.75rem 1.75rem;
-  background: white;
+  background: var(--bg-card);
   border: 2px solid var(--border);
   border-radius: 50px;
   font-size: 0.9rem;
-  color: var(--primary);
+  color: var(--accent);
   font-weight: 600;
   margin-bottom: 2.5rem;
   box-shadow: var(--shadow);
@@ -73,15 +73,15 @@
 .badge-dot {
   width: 10px;
   height: 10px;
-  background: var(--primary);
+  background: var(--accent);
   border-radius: 50%;
   animation: pulse 2s ease-in-out infinite;
-  box-shadow: 0 0 0 0 rgba(14, 165, 233, 0.7);
+  box-shadow: 0 0 0 0 var(--accent-glow);
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 0 0 rgba(14, 165, 233, 0.7); }
-  50% { opacity: 0.8; transform: scale(1.1); box-shadow: 0 0 0 10px rgba(14, 165, 233, 0); }
+  0%, 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 0 0 var(--accent-glow); }
+  50% { opacity: 0.8; transform: scale(1.1); box-shadow: 0 0 0 10px rgba(0, 212, 255, 0); }
 }
 
 @keyframes fadeInDown {
@@ -92,30 +92,29 @@
 .hero-title {
   font-size: 4rem;
   font-weight: 900;
-  color: var(--text-dark);
+  color: var(--text-primary);
   margin-bottom: 1.5rem;
   line-height: 1.1;
   letter-spacing: -0.02em;
 }
 
 .highlight {
-  background: var(--gradient);
+  background: var(--accent-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  position: relative;
 }
 
 .hero-subtitle {
   font-size: 1.4rem;
-  color: var(--text-light);
+  color: var(--text-secondary);
   margin-bottom: 1.25rem;
   font-weight: 600;
 }
 
 .hero-description {
   font-size: 1.15rem;
-  color: var(--text);
+  color: var(--text-secondary);
   margin-bottom: 3rem;
   line-height: 1.8;
   max-width: 750px;
@@ -146,26 +145,26 @@
 }
 
 .btn-primary {
-  background: var(--gradient);
+  background: var(--accent-gradient);
   color: white;
-  box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3);
+  box-shadow: 0 10px 30px var(--accent-glow);
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(14, 165, 233, 0.4);
+  box-shadow: 0 15px 40px var(--accent-glow);
 }
 
 .btn-secondary {
-  background: white;
-  color: var(--text-dark);
+  background: var(--bg-card);
+  color: var(--text-primary);
   border-color: var(--border);
   box-shadow: var(--shadow);
 }
 
 .btn-secondary:hover {
-  border-color: var(--primary);
-  color: var(--primary);
+  border-color: var(--accent);
+  color: var(--accent);
   transform: translateY(-3px);
   box-shadow: var(--shadow-lg);
 }
@@ -176,7 +175,7 @@
   align-items: center;
   gap: 3rem;
   padding: 2.5rem;
-  background: white;
+  background: var(--bg-card);
   border-radius: 20px;
   box-shadow: var(--shadow-xl);
   border: 1px solid var(--border);
@@ -190,7 +189,7 @@
 .stat-number {
   font-size: 2.5rem;
   font-weight: 900;
-  background: var(--gradient);
+  background: var(--accent-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -199,7 +198,7 @@
 
 .stat-label {
   font-size: 0.95rem;
-  color: var(--text-light);
+  color: var(--text-secondary);
   font-weight: 600;
 }
 
@@ -218,7 +217,7 @@
   flex-direction: column;
   align-items: center;
   gap: 0.75rem;
-  color: var(--text-light);
+  color: var(--text-secondary);
   font-size: 0.85rem;
   font-weight: 600;
   animation: bounce 2s ease-in-out infinite;
@@ -228,8 +227,8 @@
 .scroll-arrow {
   width: 24px;
   height: 24px;
-  border-right: 3px solid var(--primary);
-  border-bottom: 3px solid var(--primary);
+  border-right: 3px solid var(--accent);
+  border-bottom: 3px solid var(--accent);
   transform: rotate(45deg);
 }
 

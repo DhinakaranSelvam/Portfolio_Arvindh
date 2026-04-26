@@ -24,9 +24,21 @@ const Education = () => {
 
   const education = [
     {
+      degree: 'Business Mastery Certification',
+      institution: 'IIT Madras Pravartak',
+      icon: '🎓',
+      status: 'Completed',
+    },
+    {
       degree: 'Certified Public Accounting (CPA)',
       institution: 'Pursuing',
       icon: '📜',
+      status: 'In Progress',
+    },
+    {
+      degree: 'MBA in Finance',
+      institution: 'Symbiosis School of Online and Digital Learning',
+      icon: '💼',
       status: 'In Progress',
     },
     {
@@ -39,7 +51,7 @@ const Education = () => {
       degree: 'Bachelor of Commerce (B. Com)',
       institution: 'Jain Deemed to be University, Bengaluru',
       icon: '🎓',
-      status: '86% (2020 – 23)',
+      status: '87% (2020 – 23)',
     },
     {
       degree: 'Higher Secondary Education (CBSE)',

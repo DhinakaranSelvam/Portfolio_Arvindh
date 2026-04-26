@@ -35,7 +35,7 @@ const Hero = () => {
         </h1>
         
         <p className="hero-subtitle">
-          Cash Operations Analyst | CPA & CMA Pursuing | Risk Management Specialist
+          Cash Operations Analyst | CPA, CMA & MBA Finance Pursuing | Risk Management Specialist
         </p>
         
         <p className="hero-description">

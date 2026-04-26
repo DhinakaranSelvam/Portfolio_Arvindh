@@ -33,6 +33,7 @@ const Experience = () => {
         'Drove risk control enhancements in collaboration with ERT and implemented preventive measures for process risks',
         'Reduced the manual error for the fiscal year by 15%',
         'Enhanced experience in regulatory compliance, risk analysis, and process audits',
+        'Currently pursuing U.S. CPA, ICMA and MBA in Finance (part time) to transition into audit and assurance',
       ],
     },
     {

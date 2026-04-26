@@ -23,14 +23,18 @@ const Certifications = () => {
   }, []);
 
   const certifications = [
-    { name: 'ICMA', status: 'Pursuing', icon: '📊' },
+    { name: 'Business Mastery Certification', status: 'Completed', icon: '🎯', provider: 'IITM Pravartak' },
+    { name: 'ICMAI', status: 'Pursuing', icon: '📊' },
     { name: 'US CPA', status: 'Pursuing', icon: '📜' },
+    { name: 'Audit and Due Diligence', status: 'Completed', icon: '🔍', provider: 'NASBA' },
+    { name: 'Business Ethics', status: 'Completed', icon: '⚖️', provider: 'NASBA' },
+    { name: 'Capital Markets', status: 'Completed', icon: '📈', provider: 'NASBA' },
+    { name: 'E Filing', status: 'Completed', icon: '📝', provider: 'Nergy 360 and ICMAI' },
+    { name: 'SAP', status: 'Completed', icon: '💻', provider: 'Nergy 360' },
+    { name: 'MS Office Intermediate Program', status: 'Completed', icon: '💼', provider: 'Microsoft (Word, Excel, PowerPoint)' },
+    { name: 'Cambridge University Press Soft Skills', status: 'Completed', icon: '🗣️', provider: 'Cambridge University Press' },
     { name: 'Diploma in Computer Animation', status: 'Completed', icon: '🎨', provider: 'CSC' },
     { name: 'Diploma in Aero Modelling', status: 'Completed', icon: '✈️', provider: 'TAAL, Hosur' },
-    { name: 'Microsoft Excel & PowerPoint', status: 'Completed', icon: '💼', provider: 'LinkedIn Learning' },
-    { name: 'Audit and Due Diligence', status: 'Completed', icon: '🔍', provider: 'LinkedIn Learning' },
-    { name: 'Business Ethics', status: 'Completed', icon: '⚖️', provider: 'LinkedIn Learning' },
-    { name: 'Capital Markets', status: 'Completed', icon: '📈', provider: 'LinkedIn Learning' },
   ];
 
   return (

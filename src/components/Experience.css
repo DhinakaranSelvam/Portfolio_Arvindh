@@ -1,6 +1,6 @@
 .experience-section {
   padding: 100px 2rem;
-  background: var(--bg-alt);
+  background: var(--bg-primary);
 }
 
 .experience-timeline {
@@ -12,12 +12,12 @@
 }
 
 .experience-card {
-  background: white;
+  background: var(--bg-card);
   border: 2px solid var(--border);
   border-radius: 20px;
   padding: 2.5rem;
   box-shadow: var(--shadow);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s ease;
   opacity: 0;
   transform: translateX(-40px);
   animation: slideInLeft 0.7s ease forwards;
@@ -26,7 +26,7 @@
 .experience-card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-xl);
-  border-color: var(--primary);
+  border-color: var(--accent);
 }
 
 @keyframes slideInLeft {
@@ -53,7 +53,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--bg-alt);
+  background: var(--bg-secondary);
   border-radius: 16px;
   border: 2px solid var(--border);
 }
@@ -65,14 +65,14 @@
 .experience-role {
   font-size: 1.6rem;
   font-weight: 800;
-  color: var(--text-dark);
+  color: var(--text-primary);
   margin-bottom: 0.75rem;
   letter-spacing: -0.01em;
 }
 
 .experience-company {
   font-size: 1.15rem;
-  color: var(--primary);
+  color: var(--accent);
   font-weight: 700;
   margin-bottom: 0.75rem;
 }
@@ -80,8 +80,8 @@
 .experience-period {
   display: inline-block;
   padding: 0.5rem 1.25rem;
-  background: var(--bg-alt);
-  color: var(--text-light);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
   border-radius: 8px;
   font-size: 0.9rem;
   font-weight: 600;
@@ -103,13 +103,13 @@
   gap: 1.25rem;
   font-size: 1.05rem;
   line-height: 1.7;
-  color: var(--text);
+  color: var(--text-secondary);
 }
 
 .bullet-point {
   width: 10px;
   height: 10px;
-  background: var(--gradient);
+  background: var(--accent-gradient);
   border-radius: 50%;
   flex-shrink: 0;
   margin-top: 8px;
@@ -124,7 +124,7 @@
   transform: translate(-50%, -50%);
   width: 4px;
   height: 4px;
-  background: white;
+  background: var(--bg-card);
   border-radius: 50%;
 }
 

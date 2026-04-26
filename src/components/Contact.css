@@ -1,6 +1,6 @@
 .contact-section {
   padding: 100px 2rem;
-  background: white;
+  background: var(--bg-secondary);
 }
 
 .contact-intro {
@@ -9,7 +9,7 @@
   text-align: center;
   opacity: 0;
   transform: translateY(30px);
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+  transition: all 0.8s ease 0.2s;
 }
 
 .contact-intro.visible {
@@ -20,7 +20,7 @@
 .contact-intro p {
   font-size: 1.2rem;
   line-height: 1.8;
-  color: var(--text);
+  color: var(--text-secondary);
 }
 
 .contact-grid {
@@ -32,11 +32,11 @@
 }
 
 .contact-card {
-  background: var(--bg-alt);
+  background: var(--bg-card);
   border: 2px solid var(--border);
   border-radius: 20px;
   overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s ease;
   box-shadow: var(--shadow);
   opacity: 0;
   transform: translateY(40px);
@@ -46,8 +46,8 @@
 .contact-card:hover {
   transform: translateY(-10px);
   box-shadow: var(--shadow-xl);
-  border-color: var(--primary);
-  background: white;
+  border-color: var(--accent);
+  background: var(--bg-hover);
 }
 
 .contact-link {
@@ -62,27 +62,27 @@
 }
 
 .contact-link:hover {
-  background: rgba(14, 165, 233, 0.05);
+  background: rgba(0, 212, 255, 0.05);
 }
 
 .contact-icon {
   width: 70px;
   height: 70px;
-  background: white;
+  background: var(--bg-secondary);
   border: 2px solid var(--border);
   border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary);
+  color: var(--accent);
   flex-shrink: 0;
   transition: all 0.4s ease;
 }
 
 .contact-card:hover .contact-icon {
-  background: var(--gradient);
+  background: var(--accent-gradient);
   color: white;
-  border-color: var(--primary);
+  border-color: var(--accent);
   transform: scale(1.1) rotate(10deg);
 }
 
@@ -95,7 +95,7 @@
 
 .contact-label {
   font-size: 0.95rem;
-  color: var(--text-light);
+  color: var(--text-secondary);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -103,7 +103,7 @@
 
 .contact-value {
   font-size: 1.15rem;
-  color: var(--text-dark);
+  color: var(--text-primary);
   font-weight: 700;
   word-break: break-word;
 }

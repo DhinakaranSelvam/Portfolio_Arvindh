@@ -1,23 +1,23 @@
 .certifications-section {
   padding: 100px 2rem;
-  background: var(--bg-alt);
+  background: var(--bg-primary);
 }
 
 .certifications-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 .certification-card {
-  background: white;
+  background: var(--bg-card);
   border: 2px solid var(--border);
   border-radius: 20px;
   padding: 2.5rem;
   text-align: center;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s ease;
   box-shadow: var(--shadow);
   opacity: 0;
   transform: scale(0.9);
@@ -27,7 +27,7 @@
 .certification-card:hover {
   transform: translateY(-10px) scale(1.02);
   box-shadow: var(--shadow-xl);
-  border-color: var(--primary);
+  border-color: var(--accent);
 }
 
 @keyframes scaleIn {
@@ -46,14 +46,14 @@
 .certification-name {
   font-size: 1.2rem;
   font-weight: 800;
-  color: var(--text-dark);
+  color: var(--text-primary);
   margin-bottom: 0.75rem;
   line-height: 1.4;
 }
 
 .certification-provider {
   font-size: 1rem;
-  color: var(--text);
+  color: var(--text-secondary);
   margin-bottom: 1.25rem;
   font-weight: 500;
 }
@@ -67,15 +67,15 @@
 }
 
 .certification-status.completed {
-  background: rgba(16, 185, 129, 0.1);
-  color: #10b981;
-  border: 2px solid rgba(16, 185, 129, 0.3);
+  background: rgba(0, 212, 255, 0.1);
+  color: var(--accent);
+  border: 2px solid rgba(0, 212, 255, 0.3);
 }
 
 .certification-status.pursuing {
-  background: rgba(14, 165, 233, 0.1);
-  color: var(--primary);
-  border: 2px solid rgba(14, 165, 233, 0.3);
+  background: rgba(124, 58, 237, 0.1);
+  color: var(--accent-secondary);
+  border: 2px solid rgba(124, 58, 237, 0.3);
 }
 
 @media (max-width: 768px) {

@@ -1,23 +1,23 @@
 .education-section {
   padding: 100px 2rem;
-  background: white;
+  background: var(--bg-secondary);
 }
 
 .education-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 .education-card {
-  background: var(--bg-alt);
+  background: var(--bg-card);
   border: 2px solid var(--border);
   border-radius: 20px;
   padding: 2.5rem;
   text-align: center;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s ease;
   box-shadow: var(--shadow);
   opacity: 0;
   transform: scale(0.9);
@@ -33,7 +33,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: var(--gradient);
+  background: var(--accent-gradient);
   transform: scaleX(0);
   transition: transform 0.4s ease;
 }
@@ -45,8 +45,8 @@
 .education-card:hover {
   transform: translateY(-10px) scale(1.02);
   box-shadow: var(--shadow-xl);
-  border-color: var(--primary);
-  background: white;
+  border-color: var(--accent);
+  background: var(--bg-hover);
 }
 
 @keyframes scaleIn {
@@ -65,14 +65,14 @@
 .education-degree {
   font-size: 1.35rem;
   font-weight: 800;
-  color: var(--text-dark);
+  color: var(--text-primary);
   margin-bottom: 1rem;
   line-height: 1.4;
 }
 
 .education-institution {
   font-size: 1.05rem;
-  color: var(--text);
+  color: var(--text-secondary);
   margin-bottom: 1.25rem;
   line-height: 1.6;
 }
@@ -80,12 +80,12 @@
 .education-status {
   display: inline-block;
   padding: 0.6rem 1.5rem;
-  background: white;
-  color: var(--primary);
+  background: var(--bg-secondary);
+  color: var(--accent);
   border-radius: 10px;
   font-size: 0.95rem;
   font-weight: 700;
-  border: 2px solid var(--primary);
+  border: 2px solid var(--accent);
 }
 
 @media (max-width: 768px) {
